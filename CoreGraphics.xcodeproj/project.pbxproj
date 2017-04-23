@@ -13,6 +13,9 @@
 		D3BBA1DC1EAB821500668427 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3BBA1DA1EAB821500668427 /* Main.storyboard */; };
 		D3BBA1DE1EAB821500668427 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3BBA1DD1EAB821500668427 /* Assets.xcassets */; };
 		D3BBA1E11EAB821500668427 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3BBA1DF1EAB821500668427 /* LaunchScreen.storyboard */; };
+		D3BBA1EA1EAB822600668427 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3BBA1E91EAB822600668427 /* CoreGraphics.framework */; };
+		D3BBA1F01EACB7A700668427 /* AxialShadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BBA1EF1EACB7A700668427 /* AxialShadingView.m */; };
+		D3BBA1F31EACB8E000668427 /* RadialShadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = D3BBA1F21EACB8E000668427 /* RadialShadingView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,11 @@
 		D3BBA1DD1EAB821500668427 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3BBA1E01EAB821500668427 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3BBA1E21EAB821500668427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3BBA1E91EAB822600668427 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D3BBA1EE1EACB7A700668427 /* AxialShadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxialShadingView.h; sourceTree = "<group>"; };
+		D3BBA1EF1EACB7A700668427 /* AxialShadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AxialShadingView.m; sourceTree = "<group>"; };
+		D3BBA1F11EACB8E000668427 /* RadialShadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadialShadingView.h; sourceTree = "<group>"; };
+		D3BBA1F21EACB8E000668427 /* RadialShadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadialShadingView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3BBA1EA1EAB822600668427 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +53,7 @@
 			children = (
 				D3BBA1D01EAB821500668427 /* CoreGraphics */,
 				D3BBA1CF1EAB821500668427 /* Products */,
+				D3BBA1E81EAB822500668427 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +72,10 @@
 				D3BBA1D51EAB821500668427 /* AppDelegate.m */,
 				D3BBA1D71EAB821500668427 /* ViewController.h */,
 				D3BBA1D81EAB821500668427 /* ViewController.m */,
+				D3BBA1EE1EACB7A700668427 /* AxialShadingView.h */,
+				D3BBA1EF1EACB7A700668427 /* AxialShadingView.m */,
+				D3BBA1F11EACB8E000668427 /* RadialShadingView.h */,
+				D3BBA1F21EACB8E000668427 /* RadialShadingView.m */,
 				D3BBA1DA1EAB821500668427 /* Main.storyboard */,
 				D3BBA1DD1EAB821500668427 /* Assets.xcassets */,
 				D3BBA1DF1EAB821500668427 /* LaunchScreen.storyboard */,
@@ -77,6 +91,14 @@
 				D3BBA1D21EAB821500668427 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D3BBA1E81EAB822500668427 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3BBA1E91EAB822600668427 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,7 +173,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3BBA1F31EACB8E000668427 /* RadialShadingView.m in Sources */,
 				D3BBA1D91EAB821500668427 /* ViewController.m in Sources */,
+				D3BBA1F01EACB7A700668427 /* AxialShadingView.m in Sources */,
 				D3BBA1D61EAB821500668427 /* AppDelegate.m in Sources */,
 				D3BBA1D31EAB821500668427 /* main.m in Sources */,
 			);
@@ -312,6 +336,7 @@
 				D3BBA1E71EAB821500668427 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

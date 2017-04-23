@@ -7,23 +7,35 @@
 //
 
 #import "ViewController.h"
+#import "AxialShadingView.h"
+#import "RadialShadingView.h"
 
 @interface ViewController ()
-
+{
+    UIView *subview;
+}
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+}
+
+- (IBAction)axialShading:(id)sender {
+    [self addView:[AxialShadingView class]];
+}
+
+- (IBAction)radialShading:(id)sender {
+    [self addView:[RadialShadingView class]];
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)addView:(Class)cls {
+    [subview removeFromSuperview];
+    subview = [[cls alloc] initWithFrame:CGRectMake(0, 100, self.view.bounds.size.width, self.view.bounds.size.height)];
+    [self.view addSubview:subview];
 }
-
 
 @end
